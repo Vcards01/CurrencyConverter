@@ -22,8 +22,8 @@ interface CurrencyConverterApiService {
     )
     @GET("convert")
     fun convert(
-        @Query("from")from: String,
-        @Query("to")to: String,
-        @Query("amount")amount: Double
+        @Query("from") from: String,
+        @Query("to") to: String,
+        @Query("amount") amount: String
     ): Call<ConversionResult>
 }
